@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, HttpResponse
 
-# Create your views here.
+
+def projects(request):
+    return HttpResponse('This is out projects page.')
+
+def project(request, pk):
+    return HttpResponse(f'This is project page. Id send is : {pk}')
