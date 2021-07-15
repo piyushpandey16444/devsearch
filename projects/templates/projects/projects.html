@@ -2,5 +2,26 @@
 
 {% block content %}
     <h1>Projects</h1>
+
+    <table>
+        <th>
+            <td>Id</td>
+            <td>Title</td>
+            <td>Description</td>
+        </th>
+        <tbody>
+            {% for data in list_data %}
+            <tr>
+                <td>{{data.id}}</td>
+                <td>{{data.title}} 
+                {% if data.toprated %}
+                    <strong>(Top Rated)</strong>
+                {% else %}
+                {% endif %}</td>
+                <td>{{data.description}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 {% endblock content %}
 
