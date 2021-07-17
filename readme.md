@@ -9,4 +9,5 @@
 6). add channels inside settings.py > installed apps add channels
 7). Add channel layer also in settings.py.
 
-> It is used to control or govern channels, stores details of groups and channels. --> Need reddis for this.
+> It is used to control or govern channels, stores details of groups and channels.
+> Need reddis for this.(installation steps in redis.md)
