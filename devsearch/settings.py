@@ -41,7 +41,7 @@ INSTALLED_APPS = [
 
     'projects.apps.ProjectsConfig',
     'notification',
-    'channels'
+    'channels',
 ]
 
 MIDDLEWARE = [
